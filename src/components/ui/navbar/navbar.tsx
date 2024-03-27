@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-zinc-950 p-7 text-xl sticky top-0 z-50">
+    <div className="bg-zinc-900 p-7 text-xl sticky top-0 z-50">
       <div className="hidden justify-center items-center gap-8 md:flex">
         <Link className="hover:text-blue-500" href={"/"}>
           About
@@ -38,25 +38,31 @@ const Navbar = () => {
             onClick={() => navActions()}
           />
         </div>
+
         <div
           className={`${
             opened
-              ? "mt-5 flex flex-col gap-5 z-50 bg-zinc-950 h-screen pt-3"
+              ? "pt-5 pb-5 absolute left-0 right-0 z-50 bg-zinc-900 min-h-[10rem]"
               : "hidden"
           }`}
         >
-          <Link className="hover:text-blue-500 hover:underline" href={"/"}>
-            About
-          </Link>
-          <Link className="hover:text-blue-500 hover:underline" href={"/"}>
-            Skills
-          </Link>
-          <Link className="hover:text-blue-500 hover:underline" href={"/"}>
-            Certifications
-          </Link>
-          <Link className="hover:text-blue-500 hover:underline" href={"/"}>
-            Contact
-          </Link>
+          <div className="flex flex-col gap-7 pl-7">
+            <Link className="hover:text-blue-500 hover:underline" href={"/"}>
+              About
+            </Link>
+            <Link className="hover:text-blue-500 hover:underline" href={"/"}>
+              Skills
+            </Link>
+            <Link className="hover:text-blue-500 hover:underline" href={"/"}>
+              Experience
+            </Link>
+            <Link className="hover:text-blue-500 hover:underline" href={"/"}>
+              Certifications
+            </Link>
+            <Link className="hover:text-blue-500 hover:underline" href={"/"}>
+              Contact
+            </Link>
+          </div>
         </div>
       </div>
     </div>
