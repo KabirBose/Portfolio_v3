@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <div className="bg-zinc-950 h-[35rem] flex flex-col justify-center content-center gap-3 p-10">
-      <h1 className="font-semibold text-xl">Hello there!</h1>
+    <div className="bg-zinc-950 h-[35rem] flex flex-col justify-center content-center gap-3 p-10 text-lg md:text-xl">
+      <h1 className="font-semibold text-2xl md:text:3xl">Hello there!</h1>
       <p>
         I am a student at Ontario Tech University, studying{" "}
         <strong className="text-blue-500">
