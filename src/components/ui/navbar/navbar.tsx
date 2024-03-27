@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-zinc-950 p-7 text-lg md:text-xl">
+    <div className="bg-zinc-950 p-7 text-lg md:text-xl sticky top-0 z-50">
       <div className="hidden justify-center items-center gap-8 md:flex">
         <Link className="hover:text-blue-500" href={"/"}>
           About
@@ -38,7 +38,13 @@ const Navbar = () => {
             onClick={() => navActions()}
           />
         </div>
-        <div className={`${opened ? "mt-5 flex flex-col gap-5" : "hidden"}`}>
+        <div
+          className={`${
+            opened
+              ? "mt-5 flex flex-col gap-5 absolute z-50 bg-zinc-950 h-screen pr-6 pt-3"
+              : "hidden"
+          }`}
+        >
           <Link className="hover:text-blue-500 hover:underline" href={"/"}>
             About
           </Link>
