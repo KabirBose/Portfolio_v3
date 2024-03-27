@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-zinc-950 p-7 text-lg md:text-xl sticky top-0 z-50">
+    <div className="bg-zinc-950 p-7 text-xl sticky top-0 z-50">
       <div className="hidden justify-center items-center gap-8 md:flex">
         <Link className="hover:text-blue-500" href={"/"}>
           About
@@ -41,7 +41,7 @@ const Navbar = () => {
         <div
           className={`${
             opened
-              ? "mt-5 flex flex-col gap-5 absolute z-50 bg-zinc-950 h-screen pr-6 pt-3"
+              ? "mt-5 flex flex-col gap-5 z-50 bg-zinc-950 h-screen pt-3"
               : "hidden"
           }`}
         >
