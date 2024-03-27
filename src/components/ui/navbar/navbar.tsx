@@ -37,11 +37,7 @@ const Navbar = () => {
           onClick={() => navActions()}
           className="cursor-pointer"
         />
-        <div
-          className={`${
-            opened ? "mt-5 absolute flex flex-col gap-5" : "hidden"
-          }`}
-        >
+        <div className={`${opened ? "mt-5 flex flex-col gap-5" : "hidden"}`}>
           <Link className="hover:text-blue-500" href={"/"}>
             About
           </Link>
