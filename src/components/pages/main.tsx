@@ -2,11 +2,11 @@
 
 const Main = () => {
   return (
-    <div className="bg-slate-950 text-slate-300 flex flex-col justify-center items-center h-screen gap-3">
-      <h1 className="text-5xl md:text-6xl lg:text-8xl font-semibold">
+    <div className="bg-slate-900 text-slate-300 flex flex-col justify-center items-center h-screen gap-3">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold">
         Kabir Bose
       </h1>
-      <p className="text-2xl md:text-3xl lg:text-5xl font-md">
+      <p className="text-xl md:text-2xl lg:text-3xl font-md">
         Software Eng & Cybersecurity
       </p>
     </div>

@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
-    <nav className="bg-slate-950 text-slate-300 flex justify-center items-center gap-5 p-7 text-lg md:text-2xl lg:text-3xl md:gap-12">
-      <p>About</p>
-      <p>Skills</p>
-      <p>Certifications</p>
-      <p>Contact</p>
+    <nav className="text-slate-300 bg-slate-900 flex justify-center items-center p-7 gap-8 text-lg md:text-xl">
+      <Link href={"/"}>About</Link>
+      <Link href={"/"}>Skills</Link>
+      <Link href={"/"}>Certifications</Link>
+      <Link href={"/"}>Contact</Link>
     </nav>
   );
 };
