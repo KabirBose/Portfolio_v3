@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="md:hidden">
         <div className="cursor-pointer">
           <FontAwesomeIcon
-            icon={faBars}
+            icon={faEllipsisVertical}
             size="lg"
             style={{ color: "#ffffff" }}
             onClick={() => navActions()}

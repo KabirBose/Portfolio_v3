@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="bg-zinc-900 h-[35rem] flex flex-col justify-center content-center gap-3 p-10 text-xl">
+    <div className="bg-zinc-800 h-[35rem] flex flex-col justify-center content-center gap-3 p-10 text-xl">
       <h1 className="font-semibold text-2xl md:text:3xl">About Me</h1>
       <p>
         I am a student at Ontario Tech University, studying{" "}
